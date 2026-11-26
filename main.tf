@@ -29,6 +29,7 @@ module "gke" {
   count  = var.enable_gke ? 1 : 0
   source = "./modules/gke"
 
+  project_id   = var.project_id
   cluster_name = "${local.name_prefix}-gke"
   location     = var.region
   network      = module.vpc.network_self_link

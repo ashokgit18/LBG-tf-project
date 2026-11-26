@@ -4,3 +4,14 @@
 *.tfplan
 terraform.tfvars
 crash.log
+
+# Terraform local files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+plan.txt
+*.tfvars
+!*.tfvars.example
+crash.log
